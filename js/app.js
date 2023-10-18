@@ -47,11 +47,16 @@ card.innerHTML = `
   </div>
 </div>
 `
-const personaJson = JSON.stringify(nuevaPersona);
+const arrayDatos = JSON.parse(localStorage.getItem('user')) || [];
+arrayDatos.push(nuevaPersona);
+const personaJson = JSON.stringify(arrayDatos);
 localStorage.setItem('user', personaJson);
 const personaObjeto = JSON.parse(personaJson);
 console.log(personaObjeto);
+
 };
+
+
 
 document.querySelector('#formDatos').addEventListener('submit', formulario);
 
