@@ -13,11 +13,11 @@
       <form class="row g-3" id="formDatos">
         <div class="col-md-6">
           <label for="inputNombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre" placeholder="José" required>
+          <input type="text" class="form-control" id="inputNombre" placeholder="José" required maxlength="40">
         </div>
         <div class="col-md-6">
           <label for="inputApellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="inputApellido" placeholder="Rodriguez" required>
+          <input type="text" class="form-control" id="inputApellido" placeholder="Rodriguez" required maxlength="40">
         </div>
         <div class="col-12">
           <label for="inputFechaDeNac" class="form-label">Fecha de nacimiento</label>
@@ -25,15 +25,15 @@
         </div>
         <div class="col-12">
           <label for="inputEmail" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@gmail.com" required>
+          <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@gmail.com" required maxlength="60">
         </div>
         <div class="col-md-4">
           <label for="inputGenero" class="form-label">Genero</label>
           <select id="inputGenero" class="form-select" required>
-            <option selected>Genero...</option>
-            <option>Masculino</option>
-            <option>Femenino</option>
-            <option>Otro</option>
+            <option selected disabled value="">Genero...</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
           </select>
         </div>
         <div class="col-md-5">
